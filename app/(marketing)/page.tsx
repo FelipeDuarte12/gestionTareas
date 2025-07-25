@@ -43,11 +43,7 @@ const marketingPage = () => {
             <div className ={cn("text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto", textFont.className)}>
                 Colaboración, manejo de proyectos y tareas, todo en un solo lugar. Desde lo más alto hacia tu oficina, MiTarea te ayuda a mantenerte organizado y productivo.
             </div>
-            <Button className ="mt-6" size="lg" asChild>
-                <Link href="">
-                    Consigue MiTarea gratis
-                </Link>
-            </Button>
+            
         </div>
     );
 };

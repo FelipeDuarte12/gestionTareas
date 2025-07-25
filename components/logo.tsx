@@ -5,7 +5,7 @@ import localFont from 'next/font/local';
 import { cn } from '@/lib/utils';
 
 const Fuente = localFont({
-    src:"../../public/fuentes/cal-sans.woff2",
+    src:"../public/fuentes/cal-sans.woff2",
 
 
 });

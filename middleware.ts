@@ -22,7 +22,13 @@ export default clerkMiddleware(async (auth, req) => {
   }
 
   // 3. Usuario autenticado CON organización y está en ruta pública → redirigir a organización
-  if (userId && orgId && isPublicRoute(req) && currentPath !== `/organizacion/${orgId}`) {
+  if (
+    userId &&
+    orgId &&
+    isPublicRoute(req) &&
+    currentPath !== `/organizacion/${orgId}` &&
+    currentPath !== '/seleccionar-org'
+  ) {
     const orgSeleccion = new URL(`/organizacion/${orgId}`, req.url);
     return NextResponse.redirect(orgSeleccion);
   }
